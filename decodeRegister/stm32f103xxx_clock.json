@@ -1,0 +1,119 @@
+{"por":"0x00000000",
+"flags":[
+    {
+        "bit": "Bits 31:27 Reserved, must be kept at reset value"
+    },
+    {
+        "bit": "Bits 26:24 MCO: Microcontroller clock output Set and cleared by software.",
+        "data": [
+            "0xx: No clock",
+            "100: System clock (SYSCLK) selected",
+            "101: HSI clock selected",
+            "110: HSE clock selected",
+            "111: PLL clock divided by 2 selected"
+        ]
+    },
+    {
+        "bit": "Bit 22 USBPRE: USB prescaler Set and cleared by software to generate 48 MHz USB clock. This bit must be valid before enabling the USB clock in the RCC_APB1ENR register. This bit can’t be reset if the USB clock is enabled.",
+        "data": [
+            "0: PLL clock is divided by 1.5",
+            "1: PLL clock is not divided"
+        ]
+    },
+    {
+        "bit": "Bits 21:18 PLLMUL: PLL multiplication factor These bits are written by software to define the PLL multiplication factor. These bits can be written only when PLL is disabled. Caution: The PLL output frequency must not exceed 72 MHz.",
+        "data": [
+            "0000: PLL input clock x 2",
+            "0001: PLL input clock x 3",
+            "0010: PLL input clock x 4",
+            "0011: PLL input clock x 5",
+            "0100: PLL input clock x 6",
+            "0101: PLL input clock x 7",
+            "0110: PLL input clock x 8",
+            "0111: PLL input clock x 9",
+            "1000: PLL input clock x 10",
+            "1001: PLL input clock x 11",
+            "1010: PLL input clock x 12",
+            "1011: PLL input clock x 13",
+            "1100: PLL input clock x 14",
+            "1101: PLL input clock x 15",
+            "1110: PLL input clock x 16",
+            "1111: PLL input clock x 16"
+        ]
+    },
+    {
+        "bit": "Bit 17 PLLXTPRE: HSE divider for PLL entry Set and cleared by software to divide HSE before PLL entry. This bit can be written only when PLL is disabled.",
+        "data": [
+            "0: HSE clock not divided",
+            "1: HSE clock divided by 2"
+        ]
+    },
+    {
+        "bit": "Bit 16 PLLSRC: PLL entry clock source Set and cleared by software to select PLL clock source. This bit can be written only when PLL is disabled.",
+        "data": [
+            "0: HSI oscillator clock / 2 selected as PLL input clock",
+            "1: HSE oscillator clock selected as PLL input clock"
+        ]
+    },
+    {
+        "bit": "Bits 15:14 ADCPRE: ADC prescaler Set and cleared by software to select the frequency of the clock to the ADCs.",
+        "data": [
+            "00: PCLK2 divided by 2",
+            "01: PCLK2 divided by 4",
+            "10: PCLK2 divided by 6",
+            "11: PCLK2 divided by 8"
+        ]
+    },
+    {
+        "bit": "Bits 13:11 PPRE2: APB high-speed prescaler (APB2) Set and cleared by software to control the division factor of the APB high-speed clock (PCLK2).",
+        "data": [
+            "0xx: HCLK not divided",
+            "100: HCLK divided by 2",
+            "101: HCLK divided by 4",
+            "110: HCLK divided by 8",
+            "111: HCLK divided by 16"
+        ]
+    },
+    {
+        "bit": "Bits 10:8 PPRE1: APB low-speed prescaler (APB1) Set and cleared by software to control the division factor of the APB low-speed clock (PCLK1). Warning: the software has to set correctly these bits to not exceed 36 MHz on this domain.",
+        "data": [
+            "0xx: HCLK not divided",
+            "100: HCLK divided by 2",
+            "101: HCLK divided by 4",
+            "110: HCLK divided by 8",
+            "111: HCLK divided by 16"
+        ]
+    },
+    {
+        "bit": "Bits 7:4 HPRE: AHB prescaler Set and cleared by software to control the division factor of the AHB clock.",
+        "data": [
+            "0xxx: SYSCLK not divided",
+            "1000: SYSCLK divided by 2",
+            "1001: SYSCLK divided by 4",
+            "1010: SYSCLK divided by 8",
+            "1011: SYSCLK divided by 16",
+            "1100: SYSCLK divided by 64",
+            "1101: SYSCLK divided by 128",
+            "1110: SYSCLK divided by 256",
+            "1111: SYSCLK divided by 512"
+        ]
+    },
+    {
+        "bit": "Bits 3:2 SWS: System clock switch status Set and cleared by hardware to indicate which clock source is used as system clock.",
+        "data": [
+            "00: HSI oscillator used as system clock",
+            "01: HSE oscillator used as system clock",
+            "10: PLL used as system clock",
+            "11: not applicable"
+        ]
+    },
+    {
+        "bit": "Bits 1:0 SW: System clock switch Set and cleared by software to select SYSCLK source. Set by hardware to force HSI selection when leaving Stop and Standby mode or in case of failure of the HSE oscillator used directly or indirectly as system clock (if the Clock Security System is enabled).",
+        "data": [
+            "00: HSI selected as system clock",
+            "01: HSE selected as system clock",
+            "10: PLL selected as system clock",
+            "11: not allowed"
+        ]
+    }
+]}
