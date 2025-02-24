@@ -51,7 +51,7 @@ public:
     static std::string getBitValue(long long val, int start, int size) {
         long long mask = (1LL << size) - 1;
         long long bit = (val >> start) & mask;
-        std::bitset bs(bit);
+        std::bitset <32>bs(bit);
         std::stringstream ss;
         ss << std::setfill('0') << std::setw(size) << bs.to_string().substr(32 - size);
         return ss.str();
@@ -86,7 +86,7 @@ public:
 
 // Converts a long long integer to a binary string with padding.
 std::string longToBinaryStringWithPadding(long long number) {
-    std::bitset bs(number);
+    std::bitset <32>bs(number);
     std::stringstream ss;
     ss << std::setfill('0') << std::setw(32) << bs.to_string();
     return ss.str();
