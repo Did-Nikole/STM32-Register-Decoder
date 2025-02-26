@@ -1,0 +1,71 @@
+{
+    "name": "AHB peripheral clock enable register (RCC_AHBENR)",
+    "offset": "0x14",
+    "por": " 0x0000 0014",
+    "flags": [
+        {
+            "bit": "Bits 31:11 Reserved, must be kept at reset value."
+        },
+        {
+            "bit": "Bit 10 SDIOEN: SDIO clock enable Set and cleared by software.",
+            "data": [
+                "0: SDIO clock disabled",
+                "1: SDIO clock enabled"
+            ]
+        },
+        {
+            "bit": "Bits 9 Reserved, always read as 0."
+        },
+        {
+            "bit": "Bit 8 FSMCEN: FSMC clock enable Set and cleared by software.",
+            "data": [
+                "0: FSMC clock disabled",
+                "1: FSMC clock enabled"
+            ]
+        },
+        {
+            "bit": "Bit 7 Reserved, always read as 0."
+        },
+        {
+            "bit": "Bit 6 CRCEN: CRC clock enable Set and cleared by software.",
+            "data": [
+                "0: CRC clock disabled",
+                "1: CRC clock enabled"
+            ]
+        },
+        {
+            "bit": "Bit 5 Reserved, must be kept at reset value."
+        },
+        {
+            "bit": "Bit 4 FLITFEN: FLITF clock enable Set and cleared by software to disable/enable FLITF clock during Sleep mode.",
+            "data": [
+                "0: FLITF clock disabled during Sleep mode",
+                "1: FLITF clock enabled during Sleep mode"
+            ]
+        },
+        {
+            "bit": "Bit 3 Reserved, must be kept at reset value."
+        },
+        {
+            "bit": "Bit 2 SRAMEN: SRAM interface clock enable Set and cleared by software to disable/enable SRAM interface clock during Sleep mode.",
+            "data": [
+                "0: SRAM interface clock disabled during Sleep mode.",
+                "1: SRAM interface clock enabled during Sleep mode"
+            ]
+        },
+        {
+            "bit": "Bit 1 DMA2EN: DMA2 clock enable Set and cleared by software.",
+            "data": [
+                "0: DMA2 clock disabled",
+                "1: DMA2 clock enabled"
+            ]
+        },
+        {
+            "bit": "Bit 0 DMA1EN: DMA1 clock enable Set and cleared by software.",
+            "data": [
+                "0: DMA1 clock disabled",
+                "1: DMA1 clock enabled"
+            ]
+        }
+    ]
+}

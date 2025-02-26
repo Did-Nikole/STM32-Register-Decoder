@@ -1,0 +1,142 @@
+{
+    "name": "APB2 peripheral clock enable register (RCC_APB2ENR)",
+    "offset": "0x14",
+    "por": " 0x0000 0014",
+    "flags": [
+        {
+            "bit": "Bits 31:22 Reserved, must be kept at reset value."
+        },
+        {
+            "bit": "Bit 21 TIM11EN: TIM11 timer clock enable Set and cleared by software.",
+            "data": [
+                "0: TIM11 timer clock disabled",
+                "1: TIM11 timer clock enabled"
+            ]
+        },
+        {
+            "bit": "Bit 20 TIM10EN: TIM10 timer clock enable Set and cleared by software.",
+            "data": [
+                "0: TIM10 timer clock disabled",
+                "1: TIM10 timer clock enabled"
+            ]
+        },
+        {
+            "bit": "Bit 19 TIM9EN: TIM9 timer clock enable Set and cleared by software.",
+            "data": [
+                "0: TIM9 timer clock disabled",
+                "1: TIM9 timer clock enabled"
+            ]
+        },
+        {
+            "bit": "Bits 18:16 Reserved, always read as 0."
+        },
+        {
+            "bit": "Bit 15 ADC3EN: ADC3 interface clock enable Set and cleared by software.",
+            "data": [
+                "0: ADC3 interface clock disabled",
+                "1: ADC3 interface clock enabled"
+            ]
+        },
+        {
+            "bit": "Bit 14 USART1EN: USART1 clock enable Set and cleared by software.",
+            "data": [
+                "0: USART1 clock disabled",
+                "1: USART1 clock enabled"
+            ]
+        },
+        {
+            "bit": "Bit 13 TIM8EN: TIM8 Timer clock enable Set and cleared by software.",
+            "data": [
+                "0: TIM8 timer clock disabled",
+                "1: TIM8 timer clock enabled"
+            ]
+        },
+        {
+            "bit": "Bit 12 SPI1EN: SPI1 clock enable Set and cleared by software.",
+            "data": [
+                "0: SPI1 clock disabled",
+                "1: SPI1 clock enabled"
+            ]
+        },
+        {
+            "bit": "Bit 11 TIM1EN: TIM1 timer clock enable Set and cleared by software.",
+            "data": [
+                "0: TIM1 timer clock disabled",
+                "1: TIM1 timer clock enabled"
+            ]
+        },
+        {
+            "bit": "Bit 10 ADC2EN: ADC 2 interface clock enable Set and cleared by software.",
+            "data": [
+                "0: ADC 2 interface clock disabled",
+                "1: ADC 2 interface clock enabled"
+            ]
+        },
+        {
+            "bit": "Bit 9 ADC1EN: ADC 1 interface clock enable Set and cleared by software.",
+            "data": [
+                "0: ADC 1 interface disabled",
+                "1: ADC 1 interface clock enabled"
+            ]
+        },
+        {
+            "bit": "Bit 8 IOPGEN: IO port G clock enable Set and cleared by software.",
+            "data": [
+                "0: IO port G clock disabled",
+                "1: IO port G clock enabled"
+            ]
+        },
+        {
+            "bit": "Bit 7 IOPFEN: IO port F clock enable Set and cleared by software.",
+            "data": [
+                "0: IO port F clock disabled",
+                "1: IO port F clock enabled"
+            ]
+        },
+        {
+            "bit": "Bit 6 IOPEEN: IO port E clock enable Set and cleared by software.",
+            "data": [
+                "0: IO port E clock disabled",
+                "1: IO port E clock enabled"
+            ]
+        },
+        {
+            "bit": "Bit 5 IOPDEN: IO port D clock enable Set and cleared by software.",
+            "data": [
+                "0: IO port D clock disabled",
+                "1: IO port D clock enabled"
+            ]
+        },
+        {
+            "bit": "Bit 4 IOPCEN: IO port C clock enable Set and cleared by software.",
+            "data": [
+                "0: IO port C clock disabled",
+                "1: IO port C clock enabled"
+            ]
+        },
+        {
+            "bit": "Bit 3 IOPBEN: IO port B clock enable Set and cleared by software.",
+            "data": [
+                "0: IO port B clock disabled",
+                "1: IO port B clock enabled"
+            ]
+        },
+        {
+            "bit": "Bit 2 IOPAEN: IO port A clock enable Set and cleared by software.",
+            "data": [
+                "0: IO port A clock disabled",
+                "1: IO port A clock enabled"
+            ]
+        },
+        {
+            "bit": "Bit 1 Reserved, must be kept at reset value."
+        },
+        {
+            "bit": "Bit 0 AFIOEN: Alternate function IO clock enable Set and cleared by software.",
+            "data": [
+                "0: Alternate Function IO clock disabled",
+                "1: Alternate Function IO clock enabled"
+            ]
+        }
+    ]
+}

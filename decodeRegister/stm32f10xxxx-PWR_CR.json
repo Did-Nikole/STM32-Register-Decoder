@@ -1,0 +1,65 @@
+{
+    "name": "Power control register (PWR_CR)",
+    "offset": "0x00",
+    "por": " 0x0000 0000 (reset by wakeup from Standby mode)",
+    "flags": [
+        {
+            "bit": "Bits 31:9 Reserved, must be kept at reset value.."
+        },
+        {
+            "bit": "Bit 8 DBP: Disable backup domain write protection. In reset state, the RTC and backup registers are protected against parasitic write access. This bit must be set to enable write access to these registers.",
+            "data": [
+                "0: Access to RTC and Backup registers disabled",
+                "1: Access to RTC and Backup registers enabled"
+            ]
+        },
+        {
+            "bit": "Bits 7:5 PLS[2:0]: PVD level selection. These bits are written by software to select the voltage threshold detected by the programmable voltage detector",
+            "data": [
+                "000: 2.2V",
+                "001: 2.3V",
+                "010: 2.4V",
+                "011: 2.5V",
+                "100: 2.6V",
+                "101: 2.7V",
+                "110: 2.8V",
+                "111: 2.9V"
+            ]
+        },
+        {
+            "bit": "Bit 4 PVDE: programmable voltage detector enable. This bit is set and cleared by software.",
+            "data": [
+                "0: PVD disabled",
+                "1: PVD enabled"
+            ]
+        },
+        {
+            "bit": "Bit 3 CSBF: Clear standby flag. This bit is always read as 0.",
+            "data": [
+                "0: No effect",
+                "1: Clear the SBF Standby Flag (write)."
+            ]
+        },
+        {
+            "bit": "Bit 2 CWUF: Clear wakeup flag. This bit is always read as 0.",
+            "data": [
+                "0: No effect",
+                "1: Clear the WUF Wakeup Flag after 2 System clock cycles. (write)"
+            ]
+        },
+        {
+            "bit": "Bit 1 PDDS: Power down deepsleep. This bit is set and cleared by software. It works together with the LPDS bit.",
+            "data": [
+                "0: Enter Stop mode when the CPU enters Deepsleep. The regulator status depends on the LPDS bit.",
+                "1: Enter Standby mode when the CPU enters Deepsleep."
+            ]
+        },
+        {
+            "bit": "Bit 0 LPDS: Low-power deepsleep. This bit is set and cleared by software. It works together with the PDDS bit.",
+            "data": [
+                "0: Voltage regulator on during Stop mode",
+                "1: Voltage regulator in low-power mode during Stop mode"
+            ]
+        }
+    ]
+}

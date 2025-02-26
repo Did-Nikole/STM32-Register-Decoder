@@ -13,6 +13,9 @@
             "111: PLL clock divided by 2 selected"
         ]
     },
+	{
+		"bit":"Bit 23 Reserved, must be kept at reset value"
+	},
     {
         "bit": "Bit 22 USBPRE: USB prescaler Set and cleared by software to generate 48 MHz USB clock. This bit must be valid before enabling the USB clock in the RCC_APB1ENR register. This bit can’t be reset if the USB clock is enabled.",
         "data": [

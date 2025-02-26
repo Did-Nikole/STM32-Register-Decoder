@@ -1,0 +1,186 @@
+{
+    "name": "APB1 peripheral reset register (RCC_APB1RSTR)",
+    "offset": "0x10",
+    "por": " 0x0000 0000",
+    "flags": [
+        {
+            "bit": "Bits 31:30 Reserved, must be kept at reset value."
+        },
+        {
+            "bit": "Bit 29 DACRST: DAC interface reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset DAC interface"
+            ]
+        },
+        {
+            "bit": "Bit 28 PWRRST: Power interface reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset power interface"
+            ]
+        },
+        {
+            "bit": "Bit 27 BKPRST: Backup interface reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset backup interface"
+            ]
+        },
+        {
+            "bit": "Bit 26 Reserved, must be kept at reset value."
+        },
+        {
+            "bit": "Bit 25 CANRST: CAN reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset CAN"
+            ]
+        },
+        {
+            "bit": "Bit 24 Reserved, always read as 0."
+        },
+        {
+            "bit": "Bit 23 USBRST: USB reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset USB"
+            ]
+        },
+        {
+            "bit": "Bit 22 I2C2RST: I2C2 reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset I2C2"
+            ]
+        },
+        {
+            "bit": "Bit 21 I2C1RST: I2C1 reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset I2C1"
+            ]
+        },
+        {
+            "bit": "Bit 20 UART5RST: USART5 reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset USART5"
+            ]
+        },
+        {
+            "bit": "Bit 19 UART4RST: USART4 reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset USART4"
+            ]
+        },
+        {
+            "bit": "Bit 18 USART3RST: USART3 reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset USART3"
+            ]
+        },
+        {
+            "bit": "Bit 17 USART2RST: USART2 reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset USART2"
+            ]
+        },
+        {
+            "bit": "Bit 16 Reserved, must be kept at reset value."
+        },
+        {
+            "bit": "Bit 15 SPI3RST: SPI3 reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset SPI3"
+            ]
+        },
+        {
+            "bit": "Bit 14 SPI2RST: SPI2 reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset SPI2"
+            ]
+        },
+        {
+            "bit": "Bits 13:12 Reserved, must be kept at reset value."
+        },
+        {
+            "bit": "Bit 11 WWDGRST: Window watchdog reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset window watchdog"
+            ]
+        },
+        {
+            "bit": "Bits 10:9 Reserved, must be kept at reset value."
+        },
+        {
+            "bit": "Bit 8 TIM14RST: TIM14 timer reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset TIM14"
+            ]
+        },
+        {
+            "bit": "Bit 7 TIM13RST: TIM13 timer reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset TIM13"
+            ]
+        },
+        {
+            "bit": "Bit 6 TIM12RST: TIM12 timer reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset TIM12"
+            ]
+        },
+        {
+            "bit": "Bit 5 TIM7RST: TIM7 timer reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset TIM7"
+            ]
+        },
+        {
+            "bit": "Bit 4 TIM6RST: TIM6 timer reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset TIM6"
+            ]
+        },
+        {
+            "bit": "Bit 3 TIM5RST: TIM5 timer reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset TIM5"
+            ]
+        },
+        {
+            "bit": "Bit 2 TIM4RST: TIM4 timer reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset TIM4"
+            ]
+        },
+        {
+            "bit": "Bit 1 TIM3RST: TIM3 timer reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset TIM3"
+            ]
+        },
+        {
+            "bit": "Bit 0 TIM2RST: TIM2 timer reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset TIM2"
+            ]
+        }
+    ]
+}

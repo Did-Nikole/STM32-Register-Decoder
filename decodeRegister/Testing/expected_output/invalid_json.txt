@@ -1,0 +1,1 @@
+Error loading DB: Error: Total bit count in JSON file is not 32. Found: 0

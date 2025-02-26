@@ -23,6 +23,19 @@ namespace StringConstants {
     extern const std::string ERROR_LOADING_DB;       // Error message when database loading fails.
     extern const std::string UNEXPECTED_ERROR;       // Error message for unexpected errors.
     extern const std::string INVALID_NUMBER_FORMAT_IN;// Error message for number format in token.
+    extern const std::string HELP_DESCRIPTION;
+    extern const std::string FILE_DESCRIPTION;
+    extern const std::string VERBOSE_DESCRIPTON;
+    extern const std::string REG_DESCRIPTION;
+    extern const std::string HELP_OPTION;
+    extern const std::string FILE_OPTION;
+    extern const std::string REG_OPTION;
+    extern const std::string VERBOSE_OPTION;
+    extern const std::string ERROR_PASSING_VERBOSE;
+    extern const std::string ERROR_NO_FLAGS_ARRAY;
+    extern const std::string ERROR_NO_DATA_ENTRIES;
+    extern const std::string ERROR_BIT_COUNT;
+
 }
 
 #endif // STRINGS_H

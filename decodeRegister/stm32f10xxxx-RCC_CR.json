@@ -1,0 +1,78 @@
+{
+    "name": "Clock control register (RCC_CR)",
+    "offset": "0x00",
+    "por": " 0x0000 XX83 where X is undefined.",
+    "flags": [
+        {
+            "bit": "Bits 31:26 Reserved, must be kept at reset value."
+        },
+        {
+            "bit": "Bit 25 PLLRDY: PLL clock ready flag Set by hardware to indicate that the PLL is locked.",
+            "data": [
+                "0: PLL unlocked",
+                "1: PLL locked"
+            ]
+        },
+        {
+            "bit": "Bit 24 PLLON: PLL enable Set and cleared by software to enable PLL. Cleared by hardware when entering Stop or Standby mode. This bit can not be reset if the PLL clock is used as system clock or is selected to become the system clock.",
+            "data": [
+                "0: PLL OFF",
+                "1: PLL ON"
+            ]
+        },
+        {
+            "bit": "Bits 23:20 Reserved, must be kept at reset value."
+        },
+        {
+            "bit": "Bit 19 CSSON: Clock security system enable Set and cleared by software to enable the clock security system. When CSSON is set, the clock detector is enabled by hardware when the HSE oscillator is ready, and disabled by hardware if a HSE clock failure is detected.",
+            "data": [
+                "0: Clock detector OFF",
+                "1: Clock detector ON (Clock detector ON if the HSE oscillator is ready , OFF if not)."
+            ]
+        },
+        {
+            "bit": "Bit 18 HSEBYP: External high-speed clock bypass Set and cleared by software to bypass the oscillator with an external clock. The external clock must be enabled with the HSEON bit set, to be used by the device. The HSEBYP bit can be written only if the HSE oscillator is disabled.",
+            "data": [
+                "0: external 4-16 MHz oscillator not bypassed",
+                "1: external 4-16 MHz oscillator bypassed with external clock"
+            ]
+        },
+        {
+            "bit": "Bit 17 HSERDY: External high-speed clock ready flag Set by hardware to indicate that the HSE oscillator is stable. This bit needs 6 cycles of the HSE oscillator clock to fall down after HSEON reset.",
+            "data": [
+                "0: HSE oscillator not ready",
+                "1: HSE oscillator ready "
+            ]
+        },
+        {
+            "bit": "Bit 16 HSEON: HSE clock enable Set and cleared by software. Cleared by hardware to stop the HSE oscillator when entering Stop or Standby mode. This bit cannot be reset if the HSE oscillator is used directly or indirectly as the system clock.",
+            "data": [
+                "0: HSE oscillator OFF",
+                "1: HSE oscillator ON"
+            ]
+        },
+        {
+            "bit": "Bits 15:8 HSICAL[7:0]: Internal high-speed clock calibration These bits are initialized automatically at startup."
+        },
+        {
+            "bit": "Bits 7:3 HSITRIM[4:0]: Internal high-speed clock trimming These bits provide an additional user-programmable trimming value that is added to the HSICAL[7:0] bits. It can be programmed to adjust to variations in voltage and temperature that influence the frequency of the internal HSI RC. The default value is 16, which, when added to the HSICAL value, should trim the HSI to 8 MHz ± 1%. The trimming step (Fhsitrim) is around 40 kHz between two consecutive HSICAL steps."
+        },
+        {
+            "bit": "Bit 2 Reserved, must be kept at reset value."
+        },
+        {
+            "bit": "Bit 1 HSIRDY: Internal high-speed clock ready flag Set by hardware to indicate that internal 8 MHz RC oscillator is stable. After the HSION bit is cleared, HSIRDY goes low after 6 internal 8 MHz RC oscillator clock cycles.",
+            "data": [
+                "0: internal 8 MHz RC oscillator not ready",
+                "1: internal 8 MHz RC oscillator ready"
+            ]
+        },
+        {
+            "bit": "Bit 0 HSION: Internal high-speed clock enable Set and cleared by software. Set by hardware to force the internal 8 MHz RC oscillator ON when leaving Stop or Standby mode or in case of failure of the external 4-16 MHz oscillator used directly or indirectly as system clock. This bit cannot be reset if the internal 8 MHz RC is used directly or indirectly as system clock or is selected to become the system clock.",
+            "data": [
+                "0: internal 8 MHz RC oscillator OFF",
+                "1: internal 8 MHz RC oscillator ON"
+            ]
+        }
+    ]
+}

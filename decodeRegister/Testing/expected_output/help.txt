@@ -1,0 +1,6 @@
+Allowed options:
+  -h [ --help ]         produce help message
+  -f [ --file ] arg     register descriptor JSON file
+  -r [ --reg ] arg      Register initial value
+  -v [ --verbose ] arg  set verbosity level (0=none, 1=minimal, 2=default)
+

@@ -1,0 +1,32 @@
+POReset Val (to reset enter '.') :00000000000000000000000000000000
+Enter Values (comma separated multiple) then press enter
+Press Enter on Blank Line To Exit
+
+Applying 0x1234	Now At: 00000000000000000001001000110100	
+--------Decodes to--------
+MCO: Microcontroller clock output Set and cleared by software.
+s:24	e:26	bm:             000	No clock
+USBPRE: USB prescaler Set and cleared by software to generate 48 MHz USB clock. This bit must be valid before enabling the USB clock in the RCC_APB1ENR register. This bit can’t be reset if the USB clock is enabled.
+s:22	e:22	bm:               0	PLL clock is divided by 1.5
+PLLMUL: PLL multiplication factor These bits are written by software to define the PLL multiplication factor. These bits can be written only when PLL is disabled. Caution: The PLL output frequency must not exceed 72 MHz.
+s:18	e:21	bm:            0000	PLL input clock x 2
+PLLXTPRE: HSE divider for PLL entry Set and cleared by software to divide HSE before PLL entry. This bit can be written only when PLL is disabled.
+s:17	e:17	bm:               0	HSE clock not divided
+PLLSRC: PLL entry clock source Set and cleared by software to select PLL clock source. This bit can be written only when PLL is disabled.
+s:16	e:16	bm:               0	HSI oscillator clock / 2 selected as PLL input clock
+ADCPRE: ADC prescaler Set and cleared by software to select the frequency of the clock to the ADCs.
+s:14	e:15	bm:              00	PCLK2 divided by 2
+PPRE2: APB high-speed prescaler (APB2) Set and cleared by software to control the division factor of the APB high-speed clock (PCLK2).
+s:11	e:13	bm:             010	HCLK not divided
+PPRE1: APB low-speed prescaler (APB1) Set and cleared by software to control the division factor of the APB low-speed clock (PCLK1). Warning: the software has to set correctly these bits to not exceed 36 MHz on this domain.
+s:8	e:10	bm:             010	HCLK not divided
+HPRE: AHB prescaler Set and cleared by software to control the division factor of the AHB clock.
+s:4	e:7	bm:            0011	SYSCLK not divided
+SWS: System clock switch status Set and cleared by hardware to indicate which clock source is used as system clock.
+s:2	e:3	bm:              01	HSE oscillator used as system clock
+SW: System clock switch Set and cleared by software to select SYSCLK source. Set by hardware to force HSI selection when leaving Stop and Standby mode or in case of failure of the HSE oscillator used directly or indirectly as system clock (if the Clock Security System is enabled).
+s:0	e:1	bm:              00	HSI selected as system clock
+POReset Val (to reset enter '.') :00000000000000000000000000000000
+Enter Values (comma separated multiple) then press enter
+Press Enter on Blank Line To Exit
+

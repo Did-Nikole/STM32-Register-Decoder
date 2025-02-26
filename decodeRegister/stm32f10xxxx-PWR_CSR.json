@@ -1,0 +1,46 @@
+{
+    "name": "Power control/status register (PWR_CSR)",
+    "offset": "0x04",
+    "por": " 0x0000 0000 (not reset by wakeup from Standby mode)",
+    "flags": [
+        {
+            "bit": "Bits 31:9 Reserved, must be kept at reset value."
+        },
+        {
+            "bit": "Bit 8 EWUP: Enable WKUP pin This bit is set and cleared by software.",
+            "data": [
+                "0: WKUP pin is used for general purpose I/O. An event on the WKUP pin does not wakeup"
+            ]
+        },
+        {
+            "bit": "Bit 8 EWUP: Enable WKUP pin This bit is set and cleared by software.",
+            "data": [
+                "1: WKUP pin is used for wakeup from Standby mode and forced in input pull down"
+            ]
+        },
+        {
+            "bit": "Bits 7:3 Reserved, must be kept at reset value."
+        },
+        {
+            "bit": "Bit 2 PVDO: PVD output This bit is set and cleared by hardware. It is valid only if PVD is enabled by the PVDE bit.",
+            "data": [
+                "0: VDD/VDDA is higher than the PVD threshold selected with the PLS[2:0] bits.",
+                "1: VDD/VDDA is lower than the PVD threshold selected with the PLS[2:0] bits."
+            ]
+        },
+        {
+            "bit": "Bit 1 SBF: Standby flag This bit is set by hardware and cleared only by a POR/PDR (power on reset/power down reset) or by setting the CSBF bit in the Power control register (PWR_CR)",
+            "data": [
+                "0: Device has not been in Standby mode",
+                "1: Device has been in Standby mode"
+            ]
+        },
+        {
+            "bit": "Bit 0 WUF: Wakeup flag This bit is set by hardware and cleared by hardware, by a system reset or by setting the CWUF bit in the Power control register (PWR_CR)",
+            "data": [
+                "0: No wakeup event occurred",
+                "1: A wakeup event was received from the WKUP pin or from the RTC alarm"
+            ]
+        }
+    ]
+}

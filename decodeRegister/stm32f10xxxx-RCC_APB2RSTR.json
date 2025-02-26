@@ -1,0 +1,142 @@
+{
+    "name": "APB2 peripheral reset register (RCC_APB2RSTR)",
+    "offset": "0x0C",
+    "por": " 0x00000 0000",
+    "flags": [
+        {
+            "bit": "Bits 31:22 Reserved, must be kept at reset value."
+        },
+        {
+            "bit": "Bit 21 TIM11RST: TIM11 timer reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset TIM11 timer"
+            ]
+        },
+        {
+            "bit": "Bit 20 TIM10RST: TIM10 timer reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset TIM10 timer"
+            ]
+        },
+        {
+            "bit": "Bit 19 TIM9RST: TIM9 timer reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset TIM9 timer"
+            ]
+        },
+        {
+            "bit": "Bits 18:16 Reserved, always read as 0"
+        },
+        {
+            "bit": "Bit 15 ADC3RST: ADC3 interface reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset ADC3 interface"
+            ]
+        },
+        {
+            "bit": "Bit 14 USART1RST: USART1 reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset USART1"
+            ]
+        },
+        {
+            "bit": "Bit 13 TIM8RST: TIM8 timer reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset TIM8 timer"
+            ]
+        },
+        {
+            "bit": "Bit 12 SPI1RST: SPI1 reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset SPI1"
+            ]
+        },
+        {
+            "bit": "Bit 11 TIM1RST: TIM1 timer reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset TIM1 timer"
+            ]
+        },
+        {
+            "bit": "Bit 10 ADC2RST: ADC 2 interface reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset ADC 2 interface"
+            ]
+        },
+        {
+            "bit": "Bit 9 ADC1RST: ADC 1 interface reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset ADC 1 interface"
+            ]
+        },
+        {
+            "bit": "Bit 8 IOPGRST: IO port G reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset IO port G"
+            ]
+        },
+        {
+            "bit": "Bit 7 IOPFRST: IO port F reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset IO port F"
+            ]
+        },
+        {
+            "bit": "Bit 6 IOPERST: IO port E reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset IO port E"
+            ]
+        },
+        {
+            "bit": "Bit 5 IOPDRST: IO port D reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset IO port D"
+            ]
+        },
+        {
+            "bit": "Bit 4 IOPCRST: IO port C reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset IO port C"
+            ]
+        },
+        {
+            "bit": "Bit 3 IOPBRST: IO port B reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset IO port B"
+            ]
+        },
+        {
+            "bit": "Bit 2 IOPARST: IO port A reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset IO port A"
+            ]
+        },
+        {
+            "bit": "Bit 1 Reserved, must be kept at reset value."
+        },
+        {
+            "bit": "Bit 0 AFIORST: Alternate function IO reset Set and cleared by software.",
+            "data": [
+                "0: No effect",
+                "1: Reset Alternate Function"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+POReset Val (to reset enter '.') :00000000000000000000000000000000
+Enter Values (comma separated multiple) then press enter
+Press Enter on Blank Line To Exit
+

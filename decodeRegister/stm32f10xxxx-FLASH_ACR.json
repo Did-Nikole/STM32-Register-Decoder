@@ -1,0 +1,35 @@
+{
+    "name": "Flash access control register (FLASH_ACR)",
+    "offset": "0x00",
+    "por": " 0x0000 0030",
+    "flags": [
+        {
+            "bit": "Bits 31:6 Reserved, must be kept at reset value."
+        },
+        {
+            "bit": "Bit 5 PRFTBS: Prefetch buffer status This bit provides the status of the prefetch buffer.",
+            "data": [
+                "0: Prefetch buffer is disabled",
+                "1: Prefetch buffer is enabled"
+            ]
+        },
+        {
+            "bit": "Bit 4 PRFTBE: Prefetch buffer enable",
+            "data": [
+                "0: Prefetch is disabled",
+                "1: Prefetch is enabled"
+            ]
+        },
+        {
+            "bit": "Bit 3 HLFCYA: Flash half cycle access enable",
+            "data": [
+                "0: Half cycle is disabled",
+                "1: Half cycle is enabled"
+            ]
+        },
+        {
+            "bit": "Bits 2:0 LATENCY: Latency These bits represent the ratio of the SYSCLK (system clock) period to the Flash access time. 000 Zero wait state, if 0 < SYSCLK <= 24 MHz 001 One wait state, if 24 MHz < SYSCLK <= 48 MHz 010 Two wait states, if 48 MHz < SYSCLK <= 72 MHz",
+            "data": []
+        }
+    ]
+}

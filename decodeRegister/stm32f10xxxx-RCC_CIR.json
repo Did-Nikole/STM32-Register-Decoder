@@ -1,0 +1,138 @@
+{
+    "name": "Clock interrupt register (RCC_CIR)",
+    "offset": "0x08",
+    "por": " 0x0000 0000",
+    "flags": [
+        {
+            "bit": "Bits 31:24 Reserved, must be kept at reset value."
+        },
+        {
+            "bit": "Bit 23 CSSC: Clock security system interrupt clear This bit is set by software to clear the CSSF flag.",
+            "data": [
+                "0: No effect",
+                "1: Clear CSSF flag"
+            ]
+        },
+        {
+            "bit": "Bits 22:21 Reserved, must be kept at reset value."
+        },
+        {
+            "bit": "Bit 20 PLLRDYC: PLL ready interrupt clear This bit is set by software to clear the PLLRDYF flag.",
+            "data": [
+                "0: No effect",
+                "1: PLLRDYF cleared"
+            ]
+        },
+        {
+            "bit": "Bit 19 HSERDYC: HSE ready interrupt clear This bit is set by software to clear the HSERDYF flag.",
+            "data": [
+                "0: No effect",
+                "1: HSERDYF cleared"
+            ]
+        },
+        {
+            "bit": "Bit 18 HSIRDYC: HSI ready interrupt clear This bit is set software to clear the HSIRDYF flag.",
+            "data": [
+                "0: No effect",
+                "1: HSIRDYF cleared"
+            ]
+        },
+        {
+            "bit": "Bit 17 LSERDYC: LSE ready interrupt clear This bit is set by software to clear the LSERDYF flag.",
+            "data": [
+                "0: No effect",
+                "1: LSERDYF cleared"
+            ]
+        },
+        {
+            "bit": "Bit 16 LSIRDYC: LSI ready interrupt clear This bit is set by software to clear the LSIRDYF flag.",
+            "data": [
+                "0: No effect",
+                "1: LSIRDYF cleared"
+            ]
+        },
+        {
+            "bit": "Bits 15:13 Reserved, must be kept at reset value."
+        },
+        {
+            "bit": "Bit 12 PLLRDYIE: PLL ready interrupt enable Set and cleared by software to enable/disable interrupt caused by PLL lock.",
+            "data": [
+                "0: PLL lock interrupt disabled",
+                "1: PLL lock interrupt enabled"
+            ]
+        },
+        {
+            "bit": "Bit 11 HSERDYIE: HSE ready interrupt enable Set and cleared by software to enable/disable interrupt caused by the external 4-16 MHz oscillator stabilization.",
+            "data": [
+                "0: HSE ready interrupt disabled",
+                "1: HSE ready interrupt enabled"
+            ]
+        },
+        {
+            "bit": "Bit 10 HSIRDYIE: HSI ready interrupt enable Set and cleared by software to enable/disable interrupt caused by the internal 8 MHz RC oscillator stabilization.",
+            "data": [
+                "0: HSI ready interrupt disabled",
+                "1: HSI ready interrupt enabled"
+            ]
+        },
+        {
+            "bit": "Bit 9 LSERDYIE: LSE ready interrupt enable Set and cleared by software to enable/disable interrupt caused by the external 32 kHz oscillator stabilization.",
+            "data": [
+                "0: LSE ready interrupt disabled",
+                "1: LSE ready interrupt enabled"
+            ]
+        },
+        {
+            "bit": "Bit 8 LSIRDYIE: LSI ready interrupt enable Set and cleared by software to enable/disable interrupt caused by internal RC 40 kHz oscillator stabilization.",
+            "data": [
+                "0: LSI ready interrupt disabled",
+                "1: LSI ready interrupt enabled"
+            ]
+        },
+        {
+            "bit": "Bit 7 CSSF: Clock security system interrupt flag Set by hardware when a failure is detected in the external 4-16 MHz oscillator. Cleared by software setting the CSSC bit.",
+            "data": [
+                "0: No clock security interrupt caused by HSE clock failure",
+                "1: Clock security interrupt caused by HSE clock failure"
+            ]
+        },
+        {
+            "bit": "Bits 6:5 Reserved, must be kept at reset value."
+        },
+        {
+            "bit": "Bit 4 PLLRDYF: PLL ready interrupt flag Set by hardware when the PLL locks and PLLRDYDIE is set. Cleared by software setting the PLLRDYC bit.",
+            "data": [
+                "0: No clock ready interrupt caused by PLL lock",
+                "1: Clock ready interrupt caused by PLL lock"
+            ]
+        },
+        {
+            "bit": "Bit 3 HSERDYF: HSE ready interrupt flag Set by hardware when External High Speed clock becomes stable and HSERDYDIE is set. Cleared by software setting the HSERDYC bit.",
+            "data": [
+                "0: No clock ready interrupt caused by the external 4-16 MHz oscillator",
+                "1: Clock ready interrupt caused by the external 4-16 MHz oscillator"
+            ]
+        },
+        {
+            "bit": "Bit 2 HSIRDYF: HSI ready interrupt flag Set by hardware when the Internal High Speed clock becomes stable and HSIRDYDIE is set. Cleared by software setting the HSIRDYC bit.",
+            "data": [
+                "0: No clock ready interrupt caused by the internal 8 MHz RC oscillator",
+                "1: Clock ready interrupt caused by the internal 8 MHz RC oscillator"
+            ]
+        },
+        {
+            "bit": "Bit 1 LSERDYF: LSE ready interrupt flag Set by hardware when the External Low Speed clock becomes stable and LSERDYDIE is set. Cleared by software setting the LSERDYC bit.",
+            "data": [
+                "0: No clock ready interrupt caused by the external 32 kHz oscillator",
+                "1: Clock ready interrupt caused by the external 32 kHz oscillator"
+            ]
+        },
+        {
+            "bit": "Bit 0 LSIRDYF: LSI ready interrupt flag Set by hardware when the internal low speed clock becomes stable and LSIRDYDIE is set. Cleared by software setting the LSIRDYC bit.",
+            "data": [
+                "0: No clock ready interrupt caused by the internal RC 40 kHz oscillator",
+                "1: Clock ready interrupt caused by the internal RC 40 kHz oscillator"
+            ]
+        }
+    ]
+}
